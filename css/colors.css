@@ -219,3 +219,10 @@ input::placeholder{
     color: var(--secondary-gray) !important;
     font-size: 13px;
 }
+
+@media (max-width: 768px)  {
+    .nav-bar-logo{
+width: 100% !important;
+height: auto !important;;
+}
+}

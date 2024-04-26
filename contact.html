@@ -44,61 +44,61 @@
         </div>
         <!-- Spinner End -->
 
-        <!-- Navbar Start -->
-        <div class="container-fluid container nav-bar bg-transparent  ">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4 rounded-2">
-                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
-                    <img class="img-fluid" src="img/Screenshot 2023-12-17 000313-PhotoRoom.png-PhotoRoom.png" />
-                </a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link active" localization-key="home">Home</a>
-                        <a href="about.html" class="nav-item nav-link" localization-key="about">About</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                                localization-key='property'>Property</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="property-list.html" class="dropdown-item"
-                                    localization-key='propertyList'>Property List</a>
-                                <a href="property-type.html" class="dropdown-item"
-                                    localization-key='propertyType'>Property Type</a>
-                                <a href="property-agent.html" localization-key='propertyAgent'
-                                    class="dropdown-item">Property Agent</a>
-                            </div>
+       <!-- Navbar Start -->
+       <div class="container-fluid container-xxl nav-bar bg-transparent  ">
+        <nav class="navbar navbar-expand-lg bg-white shadow navbar-light py-0 px-4 rounded-2">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                <img class="img-fluid nav-bar-logo" src="img/Screenshot 2023-12-17 000313-PhotoRoom.png-PhotoRoom.png" />
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="index.html" class="nav-item nav-link active" localization-key="home">Home</a>
+                    <a href="about.html" class="nav-item nav-link" localization-key="about">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                            localization-key='property'>Property</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="property-list.html" class="dropdown-item"
+                                localization-key='propertyList'>Property List</a>
+                            <a href="property-type.html" class="dropdown-item"
+                                localization-key='propertyType'>Property Type</a>
+                            <a href="property-agent.html" localization-key='propertyAgent'
+                                class="dropdown-item">Property Agent</a>
                         </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                                localization-key='pages'>Pages</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="property.html" class="dropdown-item"
-                                    localization-key='property Page'>Property</a>
-                                <a href="testimonial.html" class="dropdown-item"
-                                    localization-key='testimonial'>Testimonial</a>
-                                <a href="lunch.html" class="dropdown-item" localization-key='lunch'>Lunch</a>
-                                <a href="404.html" class="dropdown-item" localization-key='error 404'>404 Error</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link d-flex flex-nowrap" style="word-wrap:inherit;"
-                            localization-key='contact'>Contact</a>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center  gap-1">
-                        <a href="create-property.html"
-                            class="btn button-primary  bg-primary__color border-0 px-2 d-none d-lg-flex"
-                            localization-key='Add Property'>
-                        </a>
-                        <div class="navbar-right">
-                            <button id="lang-switcher" class="btn lang-switcher">
-                                <span id="active-lang">Ar</span> <i class="fas fa-globe"></i>
-                            </button>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                            localization-key='pages'>Pages</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="property.html" class="dropdown-item"
+                                localization-key='property Page'>Property</a>
+                            <a href="testimonial.html" class="dropdown-item"
+                                localization-key='testimonial'>Testimonial</a>
+                            <a href="lunch.html" class="dropdown-item" localization-key='lunch'>Lunch</a>
+                            <a href="404.html" class="dropdown-item" localization-key='error 404'>404 Error</a>
                         </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link d-flex flex-nowrap" style="word-wrap:inherit;"
+                        localization-key='contact'>Contact</a>
+                </div>
+                <div class="d-flex justify-content-center align-items-center  gap-1">
+                    <a href="create-property.html"
+                        class="btn button-primary  bg-primary__color border-0 px-2 d-none d-lg-flex"
+                        localization-key='Add Property'>
+                    </a>
+                    <div class="navbar-right">
+                        <button id="lang-switcher" class="btn lang-switcher">
+                            <span id="active-lang">Ar</span> <i class="fas fa-globe"></i>
+                        </button>
                     </div>
                 </div>
-            </nav>
-        </div>
-        <!-- Navbar End -->
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
 
         <!-- Header Start -->
         <div class="container-fluid header bg-white p-0">
@@ -241,27 +241,31 @@
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name" />
+                                            <input type="text"
+                                                class="form-control placeholder-secondary-gray text-secondary-black"
+                                                id="name" />
                                             <label for="name">Your Name</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email"
-                                                placeholder="Your Email" />
+                                            <input type="email"
+                                                class="form-control placeholder-secondary-gray text-secondary-black"
+                                                id="email" />
                                             <label for="email">Your Email</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject"
-                                                placeholder="Subject" />
+                                            <input type="text"
+                                                class="form-control placeholder-secondary-gray text-secondary-black"
+                                                id="subject" />
                                             <label for="subject">Subject</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a message here"
+                                            <textarea class="form-control " placeholder="Leave a message here"
                                                 id="message" style="height: 150px"></textarea>
                                             <label for="message">Message</label>
                                         </div>
@@ -315,8 +319,9 @@
                         <h5 class="text-white mb-4 text-secondary-black">Newsletter</h5>
                         <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                         <div class="position-relative mx-auto" style="max-width: 400px">
-                            <input style="border: 1px solid var(--primary-blue) ; " class=" placeholder-secondary-gray text-primary-black form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
-                                placeholder="Your email" />
+                            <input style="border: 1px solid var(--primary-blue) ; "
+                                class=" placeholder-secondary-gray text-primary-black form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                                type="text" placeholder="Your email" />
                             <button type="button"
                                 class="btn button-primary  py-2 position-absolute top-0 end-0 mt-2 me-2">
                                 SignUp
