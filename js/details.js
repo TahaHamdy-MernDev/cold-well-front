@@ -148,7 +148,7 @@ $(document).ready(async function () {
             <h3 class="primary__color mb-1 text-capitalize">${property.title}</h3>
             <p class="secondary__color mb-1">${property.location}</p>
           </div>
-          <div class="d-flex gap-1 justify-content-between align-items-center">
+          <div class="d-flex gap-1 justify-content-between align-items-center w-100">
             <div class="d-flex gap-4 align-items-end">
               <span class="d-flex flex-column gap-1 tertiary__color" style="font-size: 12px;">
                 <p class="tertiary__color mb-0" localization-key='pricesStartFrom'>Prices Start From</p>
@@ -156,7 +156,7 @@ $(document).ready(async function () {
                   <strong style="font-size: 28px;">${property.price.minPrice} </strong><span>${property.price.currency}</span>
                 </span>
               </span>
-              <div class="d-flex flex-column justify-content-between align-items-center flex-md-row">
+              <div class="d-flex flex-column justify-content-between align-items-center flex-md-row ">
                 <span class="d-flex justify-content-center align-items-center">
                   <strong style="font-size: 18px;" localization-key='maxPrice'>Max Price:</strong>
                 </span>
@@ -167,16 +167,16 @@ $(document).ready(async function () {
               </div>
             </div>
             <div class="details__icons d-flex gap-2 ">
-              <a href="tel:${property.contact.number}" class="btn button-primary  py-2 px-3 phone-icon d-flex gap-2 justify-content-center align-items-center">
+              <a href="tel:${property.contact.number}" class="btn button-primary text-primary-white  py-2 px-3 phone-icon d-flex gap-2 justify-content-center align-items-center">
               <svg width="20" height="24" viewBox="0 0 20 24" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
                   d="M12.9916 23.1503C11.6689 22.833 10.6491 22.0956 9.6153 21.4101C6.01017 19.0332 3.69298 15.6832 1.9997 11.8505C1.30065 10.2708 0.664128 8.67073 0.483049 6.93276C0.310435 5.23418 0.634775 3.66876 1.67369 2.27625C2.26536 1.48795 3.0591 0.93945 3.94077 0.48877C4.35689 0.284657 4.83308 0.282295 5.28143 0.383865C5.6009 0.469466 5.91109 0.589712 6.23056 0.675314C6.80779 0.792851 7.02597 1.18549 7.10052 1.68817C7.31955 3.21353 7.55633 4.74364 7.73986 6.25949C7.76826 6.50845 7.65304 6.86745 7.47775 7.0247C6.95187 7.49645 6.39513 7.94137 5.7898 8.3547C5.18446 8.76802 5.11183 8.89709 5.30435 9.59846C6.25246 12.8044 8.06148 15.4242 10.8163 17.4248C11.2622 17.7485 11.5424 17.7678 12.0041 17.4646C12.6766 17.0135 13.336 16.5404 13.9777 16.0626C14.5429 15.657 14.8014 15.6149 15.3661 16.0633C16.3365 16.8431 17.28 17.6529 18.2411 18.4674C18.5366 18.7137 18.8544 18.9473 19.0827 19.2313C19.2099 19.3953 19.3047 19.6807 19.276 19.8586C18.9162 21.4145 18.1066 22.59 16.4416 23.0536C15.2806 23.4108 14.1136 23.5066 12.9916 23.1503Z"
-                  fill="#1E4164"></path>
+                  fill="#f4f4f4"></path>
           </svg>
-          <span localization-key='callUs'>Call Us</span>
+          <span localization-key='callUs'  class="text-primary-white">Call Us</span>
               </a>
-              <a href="${property.contact.whatsappLink}" class="btn button-primary  py-2 px-3 d-flex gap-2 justify-content-center align-items-center whatsapp-icon">
+              <a href="${property.contact.whatsappLink}" class="btn whatsapp  py-2 px-3 d-flex gap-2 justify-content-center align-items-center whatsapp-icon">
               <svg width="23" height="23" viewBox="0 0 29 29" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
