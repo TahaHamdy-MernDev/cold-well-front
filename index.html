@@ -28,6 +28,7 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="css/style.css" rel="stylesheet">
     <link href="css/lang.css" rel="stylesheet">
     <link rel="stylesheet" href="css/colors.css">
@@ -38,7 +39,7 @@
         <!-- Spinner Start -->
         <div id="spinner"
             class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <div class="spinner-border text-primary-blue" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
@@ -46,7 +47,7 @@
 
 
         <!-- Navbar Start -->
-        <div class="container-fluid container nav-bar bg-transparent  ">
+        <div class="container-fluid  nav-bar bg-transparent  ">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4 rounded-2">
                 <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
                     <img class="img-fluid" src="img/Screenshot 2023-12-17 000313-PhotoRoom.png-PhotoRoom.png" />
@@ -192,8 +193,9 @@
                         place to call home
                 </div>
                 <div class="row g-4">
-                    <div class="swiper" style="direction: ltr !important; height: 200px;">
-                        <div class="swiper-wrapper d-flex justify-content-center overflow-hidden" id="home-types" style="gap: 25px;">
+                    <div class="swiper home-type-slider" style="direction: ltr !important;">
+                        <div class="swiper-wrapper col-12" id="home-types"
+                           >
 
                         </div>
 
@@ -210,7 +212,7 @@
                     <div class="row g-5 align-items-center">
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="about-img position-relative overflow-hidden p-5 pe-0">
-                                <img class="img-fluid w-100" src="img/about.jpg">
+                                <img class="img-fluid w-100" src="img/home/home-resell.jpg">
                             </div>
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -218,9 +220,11 @@
                             <p class="mb-4">Finding the perfect property can be an exciting yet challenging task.
                                 Whether you're looking for a new home, a vacation rental, or an investment property, the
                                 right location can make all the difference in your search</p>
-                            <p><i class="fa fa-check text-primary-blue me-3"></i>Working with a knowledgeable real estate agent</p>
-                            <p><i class="fa fa-check text-primary-blue me-3"></i>Property auctions can be a great place</p>
-                            <p><i class="fa fa-check text-primary-blue me-3"></i>access off-market listings
+                            <p><i class="fa fa-check text-primary-blue-blue me-3"></i>Working with a knowledgeable real
+                                estate agent</p>
+                            <p><i class="fa fa-check text-primary-blue-blue me-3"></i>Property auctions can be a great
+                                place</p>
+                            <p><i class="fa fa-check text-primary-blue-blue me-3"></i>access off-market listings
                             </p>
                             <a class="btn button-primary py-3 px-5 mt-3" href="">Read More</a>
                         </div>
@@ -237,20 +241,22 @@
                         <div class="col-lg-6">
                             <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
                                 <h1 class="mb-3">Property Listing</h1>
-                                <p>The listing will specify the asking price or rental rate for the property, helping interested parties understand the financial commitment required to acquire or lease the property.</p>
+                                <p>The listing will specify the asking price or rental rate for the property, helping
+                                    interested parties understand the financial commitment required to acquire or lease
+                                    the property.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 text-start text-lg-end wow slideInRight" data-wow-delay="0.1s">
                             <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
                                 <li class="nav-item me-2">
-                                    <a class="btn btn-outline-primary active" data-bs-toggle="pill"
+                                    <a class="btn navigate-button active" data-bs-toggle="pill"
                                         href="#tab-1">Featured</a>
                                 </li>
                                 <li class="nav-item me-2">
-                                    <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-2">For Sell</a>
+                                    <a class="btn navigate-button  " data-bs-toggle="pill" href="#tab-2">For Sell</a>
                                 </li>
                                 <li class="nav-item me-0">
-                                    <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-3">For Rent</a>
+                                    <a class="btn navigate-button" data-bs-toggle="pill" href="#tab-3">For Rent</a>
                                 </li>
                             </ul>
                         </div>
@@ -263,26 +269,28 @@
                                         <div class="position-relative overflow-hidden">
                                             <a href=""><img class="img-fluid" src="img/property-1.jpg" alt=""></a>
                                             <div
-                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                                class="bg-primary bg-primary-blue text-primary-blue-white rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
                                                 For Sell</div>
                                             <div
-                                                class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                                class="bg-white rounded-top text-primary-blue position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                                 Appartment</div>
                                         </div>
                                         <div class="p-4 pb-0">
-                                            <h5 class="text-primary mb-3">EG12,345</h5>
+                                            <h5 class="text-primary-blue mb-3">EG12,345</h5>
                                             <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>جرين بلازا بجوار
+                                            <p><i class="fa fa-map-marker-alt text-primary-blue me-2"></i>جرين بلازا
+                                                بجوار
                                                 مطعم
                                                 ابوراوية,EGYPT</p>
                                         </div>
                                         <div class="d-flex border-top">
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                                    class="fa fa-ruler-combined text-primary-blue me-2"></i>1000
+                                                Sqft</small>
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                                    class="fa fa-bed text-primary-blue me-2"></i>3 Bed</small>
                                             <small class="flex-fill text-center py-2"><i
-                                                    class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                    class="fa fa-bath text-primary-blue me-2"></i>2 Bath</small>
                                         </div>
                                     </div>
                                 </div>
@@ -291,26 +299,28 @@
                                         <div class="position-relative overflow-hidden">
                                             <a href=""><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
                                             <div
-                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 bg-primary-blue text-primary-blue-white">
                                                 For Rent</div>
                                             <div
-                                                class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                                class="bg-white rounded-top text-primary-blue position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                                 Villa</div>
                                         </div>
                                         <div class="p-4 pb-0">
-                                            <h5 class="text-primary mb-3">EG12,345</h5>
+                                            <h5 class="text-primary-blue mb-3">EG12,345</h5>
                                             <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>جرين بلازا بجوار
+                                            <p><i class="fa fa-map-marker-alt text-primary-blue me-2"></i>جرين بلازا
+                                                بجوار
                                                 مطعم
                                                 ابوراوية,EGYPT</p>
                                         </div>
                                         <div class="d-flex border-top">
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                                    class="fa fa-ruler-combined text-primary-blue me-2"></i>1000
+                                                Sqft</small>
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                                    class="fa fa-bed text-primary-blue me-2"></i>3 Bed</small>
                                             <small class="flex-fill text-center py-2"><i
-                                                    class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                    class="fa fa-bath text-primary-blue me-2"></i>2 Bath</small>
                                         </div>
                                     </div>
                                 </div>
@@ -319,26 +329,28 @@
                                         <div class="position-relative overflow-hidden">
                                             <a href=""><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
                                             <div
-                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 bg-primary-blue text-primary-blue-white">
                                                 For Sell</div>
                                             <div
-                                                class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                                class="bg-white rounded-top text-primary-blue position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                                 Office</div>
                                         </div>
                                         <div class="p-4 pb-0">
-                                            <h5 class="text-primary mb-3">EG12,345</h5>
+                                            <h5 class="text-primary-blue mb-3">EG12,345</h5>
                                             <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>جرين بلازا بجوار
+                                            <p><i class="fa fa-map-marker-alt text-primary-blue me-2"></i>جرين بلازا
+                                                بجوار
                                                 مطعم
                                                 ابوراوية,EGYPT</p>
                                         </div>
                                         <div class="d-flex border-top">
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                                    class="fa fa-ruler-combined text-primary-blue me-2"></i>1000
+                                                Sqft</small>
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                                    class="fa fa-bed text-primary-blue me-2"></i>3 Bed</small>
                                             <small class="flex-fill text-center py-2"><i
-                                                    class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                    class="fa fa-bath text-primary-blue me-2"></i>2 Bath</small>
                                         </div>
                                     </div>
                                 </div>
@@ -347,26 +359,28 @@
                                         <div class="position-relative overflow-hidden">
                                             <a href=""><img class="img-fluid" src="img/property-4.jpg" alt=""></a>
                                             <div
-                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 bg-primary-blue text-primary-blue-white">
                                                 For Rent</div>
                                             <div
-                                                class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                                class="bg-white rounded-top text-primary-blue position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                                 Building</div>
                                         </div>
                                         <div class="p-4 pb-0">
-                                            <h5 class="text-primary mb-3">EG12,345</h5>
+                                            <h5 class="text-primary-blue mb-3">EG12,345</h5>
                                             <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>جرين بلازا بجوار
+                                            <p><i class="fa fa-map-marker-alt text-primary-blue me-2"></i>جرين بلازا
+                                                بجوار
                                                 مطعم
                                                 ابوراوية,EGYPT</p>
                                         </div>
                                         <div class="d-flex border-top">
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                                    class="fa fa-ruler-combined text-primary-blue me-2"></i>1000
+                                                Sqft</small>
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                                    class="fa fa-bed text-primary-blue me-2"></i>3 Bed</small>
                                             <small class="flex-fill text-center py-2"><i
-                                                    class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                    class="fa fa-bath text-primary-blue me-2"></i>2 Bath</small>
                                         </div>
                                     </div>
                                 </div>
@@ -375,26 +389,28 @@
                                         <div class="position-relative overflow-hidden">
                                             <a href=""><img class="img-fluid" src="img/property-5.jpg" alt=""></a>
                                             <div
-                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 bg-primary-blue text-primary-blue-white">
                                                 For Sell</div>
                                             <div
-                                                class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                                class="bg-white rounded-top text-primary-blue position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                                 Home</div>
                                         </div>
                                         <div class="p-4 pb-0">
-                                            <h5 class="text-primary mb-3">EG12,345</h5>
+                                            <h5 class="text-primary-blue mb-3">EG12,345</h5>
                                             <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>جرين بلازا بجوار
+                                            <p><i class="fa fa-map-marker-alt text-primary-blue me-2"></i>جرين بلازا
+                                                بجوار
                                                 مطعم
                                                 ابوراوية,EGYPT</p>
                                         </div>
                                         <div class="d-flex border-top">
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                                    class="fa fa-ruler-combined text-primary-blue me-2"></i>1000
+                                                Sqft</small>
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                                    class="fa fa-bed text-primary-blue me-2"></i>3 Bed</small>
                                             <small class="flex-fill text-center py-2"><i
-                                                    class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                    class="fa fa-bath text-primary-blue me-2"></i>2 Bath</small>
                                         </div>
                                     </div>
                                 </div>
@@ -403,31 +419,33 @@
                                         <div class="position-relative overflow-hidden">
                                             <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a>
                                             <div
-                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 bg-primary-blue text-primary-blue-white">
                                                 For Rent</div>
                                             <div
-                                                class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                                class="bg-white rounded-top text-primary-blue position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                                 Shop</div>
                                         </div>
                                         <div class="p-4 pb-0">
-                                            <h5 class="text-primary mb-3">EG12,345</h5>
+                                            <h5 class="text-primary-blue mb-3">EG12,345</h5>
                                             <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>جرين بلازا بجوار
+                                            <p><i class="fa fa-map-marker-alt text-primary-blue me-2"></i>جرين بلازا
+                                                بجوار
                                                 مطعم
                                                 ابوراوية,EGYPT</p>
                                         </div>
                                         <div class="d-flex border-top">
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                                    class="fa fa-ruler-combined text-primary-blue me-2"></i>1000
+                                                Sqft</small>
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                                    class="fa fa-bed text-primary-blue me-2"></i>3 Bed</small>
                                             <small class="flex-fill text-center py-2"><i
-                                                    class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                    class="fa fa-bath text-primary-blue me-2"></i>2 Bath</small>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
-                                    <a class="btn btn-primary py-3 px-5" href="">Browse More Property</a>
+                                    <a class="btn button-primary  py-3 px-5" href="">Browse More Property</a>
                                 </div>
                             </div>
                         </div>
@@ -438,26 +456,28 @@
                                         <div class="position-relative overflow-hidden">
                                             <a href=""><img class="img-fluid" src="img/property-1.jpg" alt=""></a>
                                             <div
-                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 bg-primary-blue text-primary-blue-white">
                                                 For Sell</div>
                                             <div
-                                                class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                                class="bg-white rounded-top text-primary-blue position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                                 Appartment</div>
                                         </div>
                                         <div class="p-4 pb-0">
-                                            <h5 class="text-primary mb-3">EG12,345</h5>
+                                            <h5 class="text-primary-blue mb-3">EG12,345</h5>
                                             <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>جرين بلازا بجوار
+                                            <p><i class="fa fa-map-marker-alt text-primary-blue me-2"></i>جرين بلازا
+                                                بجوار
                                                 مطعم
                                                 ابوراوية,EGYPT</p>
                                         </div>
                                         <div class="d-flex border-top">
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                                    class="fa fa-ruler-combined text-primary-blue me-2"></i>1000
+                                                Sqft</small>
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                                    class="fa fa-bed text-primary-blue me-2"></i>3 Bed</small>
                                             <small class="flex-fill text-center py-2"><i
-                                                    class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                    class="fa fa-bath text-primary-blue me-2"></i>2 Bath</small>
                                         </div>
                                     </div>
                                 </div>
@@ -466,26 +486,28 @@
                                         <div class="position-relative overflow-hidden">
                                             <a href=""><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
                                             <div
-                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 bg-primary-blue text-primary-blue-white">
                                                 For Rent</div>
                                             <div
-                                                class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                                class="bg-white rounded-top text-primary-blue position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                                 Villa</div>
                                         </div>
                                         <div class="p-4 pb-0">
-                                            <h5 class="text-primary mb-3">EG12,345</h5>
+                                            <h5 class="text-primary-blue mb-3">EG12,345</h5>
                                             <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>جرين بلازا بجوار
+                                            <p><i class="fa fa-map-marker-alt text-primary-blue me-2"></i>جرين بلازا
+                                                بجوار
                                                 مطعم
                                                 ابوراوية,EGYPT</p>
                                         </div>
                                         <div class="d-flex border-top">
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                                    class="fa fa-ruler-combined text-primary-blue me-2"></i>1000
+                                                Sqft</small>
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                                    class="fa fa-bed text-primary-blue me-2"></i>3 Bed</small>
                                             <small class="flex-fill text-center py-2"><i
-                                                    class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                    class="fa fa-bath text-primary-blue me-2"></i>2 Bath</small>
                                         </div>
                                     </div>
                                 </div>
@@ -494,26 +516,28 @@
                                         <div class="position-relative overflow-hidden">
                                             <a href=""><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
                                             <div
-                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 bg-primary-blue text-primary-blue-white">
                                                 For Sell</div>
                                             <div
-                                                class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                                class="bg-white rounded-top text-primary-blue position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                                 Office</div>
                                         </div>
                                         <div class="p-4 pb-0">
-                                            <h5 class="text-primary mb-3">EG12,345</h5>
+                                            <h5 class="text-primary-blue mb-3">EG12,345</h5>
                                             <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>جرين بلازا بجوار
+                                            <p><i class="fa fa-map-marker-alt text-primary-blue me-2"></i>جرين بلازا
+                                                بجوار
                                                 مطعم
                                                 ابوراوية,EGYPT</p>
                                         </div>
                                         <div class="d-flex border-top">
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                                    class="fa fa-ruler-combined text-primary-blue me-2"></i>1000
+                                                Sqft</small>
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                                    class="fa fa-bed text-primary-blue me-2"></i>3 Bed</small>
                                             <small class="flex-fill text-center py-2"><i
-                                                    class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                    class="fa fa-bath text-primary-blue me-2"></i>2 Bath</small>
                                         </div>
                                     </div>
                                 </div>
@@ -522,26 +546,28 @@
                                         <div class="position-relative overflow-hidden">
                                             <a href=""><img class="img-fluid" src="img/property-4.jpg" alt=""></a>
                                             <div
-                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 bg-primary-blue text-primary-blue-white">
                                                 For Rent</div>
                                             <div
-                                                class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                                class="bg-white rounded-top text-primary-blue position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                                 Building</div>
                                         </div>
                                         <div class="p-4 pb-0">
-                                            <h5 class="text-primary mb-3">EG12,345</h5>
+                                            <h5 class="text-primary-blue mb-3">EG12,345</h5>
                                             <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>جرين بلازا بجوار
+                                            <p><i class="fa fa-map-marker-alt text-primary-blue me-2"></i>جرين بلازا
+                                                بجوار
                                                 مطعم
                                                 ابوراوية,EGYPT</p>
                                         </div>
                                         <div class="d-flex border-top">
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                                    class="fa fa-ruler-combined text-primary-blue me-2"></i>1000
+                                                Sqft</small>
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                                    class="fa fa-bed text-primary-blue me-2"></i>3 Bed</small>
                                             <small class="flex-fill text-center py-2"><i
-                                                    class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                    class="fa fa-bath text-primary-blue me-2"></i>2 Bath</small>
                                         </div>
                                     </div>
                                 </div>
@@ -550,26 +576,28 @@
                                         <div class="position-relative overflow-hidden">
                                             <a href=""><img class="img-fluid" src="img/property-5.jpg" alt=""></a>
                                             <div
-                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 bg-primary-blue text-primary-blue-white">
                                                 For Sell</div>
                                             <div
-                                                class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                                class="bg-white rounded-top text-primary-blue position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                                 Home</div>
                                         </div>
                                         <div class="p-4 pb-0">
-                                            <h5 class="text-primary mb-3">EG12,345</h5>
+                                            <h5 class="text-primary-blue mb-3">EG12,345</h5>
                                             <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>جرين بلازا بجوار
+                                            <p><i class="fa fa-map-marker-alt text-primary-blue me-2"></i>جرين بلازا
+                                                بجوار
                                                 مطعم
                                                 ابوراوية,EGYPT</p>
                                         </div>
                                         <div class="d-flex border-top">
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                                    class="fa fa-ruler-combined text-primary-blue me-2"></i>1000
+                                                Sqft</small>
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                                    class="fa fa-bed text-primary-blue me-2"></i>3 Bed</small>
                                             <small class="flex-fill text-center py-2"><i
-                                                    class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                    class="fa fa-bath text-primary-blue me-2"></i>2 Bath</small>
                                         </div>
                                     </div>
                                 </div>
@@ -578,31 +606,33 @@
                                         <div class="position-relative overflow-hidden">
                                             <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a>
                                             <div
-                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 bg-primary-blue text-primary-blue-white">
                                                 For Rent</div>
                                             <div
-                                                class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                                class="bg-white rounded-top text-primary-blue position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                                 Shop</div>
                                         </div>
                                         <div class="p-4 pb-0">
-                                            <h5 class="text-primary mb-3">EG12,345</h5>
+                                            <h5 class="text-primary-blue mb-3">EG12,345</h5>
                                             <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>جرين بلازا بجوار
+                                            <p><i class="fa fa-map-marker-alt text-primary-blue me-2"></i>جرين بلازا
+                                                بجوار
                                                 مطعم
                                                 ابوراوية,EGYPT</p>
                                         </div>
                                         <div class="d-flex border-top">
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                                    class="fa fa-ruler-combined text-primary-blue me-2"></i>1000
+                                                Sqft</small>
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                                    class="fa fa-bed text-primary-blue me-2"></i>3 Bed</small>
                                             <small class="flex-fill text-center py-2"><i
-                                                    class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                    class="fa fa-bath text-primary-blue me-2"></i>2 Bath</small>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <a class="btn btn-primary py-3 px-5" href="">Browse More Property</a>
+                                    <a class="btn button-primary  py-3 px-5" href="">Browse More Property</a>
                                 </div>
                             </div>
                         </div>
@@ -613,26 +643,28 @@
                                         <div class="position-relative overflow-hidden">
                                             <a href=""><img class="img-fluid" src="img/property-1.jpg" alt=""></a>
                                             <div
-                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 bg-primary-blue text-primary-blue-white">
                                                 For Sell</div>
                                             <div
-                                                class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                                class="bg-white rounded-top text-primary-blue position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                                 Appartment</div>
                                         </div>
                                         <div class="p-4 pb-0">
-                                            <h5 class="text-primary mb-3">EG12,345</h5>
+                                            <h5 class="text-primary-blue mb-3">EG12,345</h5>
                                             <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>جرين بلازا بجوار
+                                            <p><i class="fa fa-map-marker-alt text-primary-blue me-2"></i>جرين بلازا
+                                                بجوار
                                                 مطعم
                                                 ابوراوية,EGYPT</p>
                                         </div>
                                         <div class="d-flex border-top">
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                                    class="fa fa-ruler-combined text-primary-blue me-2"></i>1000
+                                                Sqft</small>
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                                    class="fa fa-bed text-primary-blue me-2"></i>3 Bed</small>
                                             <small class="flex-fill text-center py-2"><i
-                                                    class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                    class="fa fa-bath text-primary-blue me-2"></i>2 Bath</small>
                                         </div>
                                     </div>
                                 </div>
@@ -641,26 +673,28 @@
                                         <div class="position-relative overflow-hidden">
                                             <a href=""><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
                                             <div
-                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 bg-primary-blue text-primary-blue-white">
                                                 For Rent</div>
                                             <div
-                                                class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                                class="bg-white rounded-top text-primary-blue position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                                 Villa</div>
                                         </div>
                                         <div class="p-4 pb-0">
-                                            <h5 class="text-primary mb-3">EG12,345</h5>
+                                            <h5 class="text-primary-blue mb-3">EG12,345</h5>
                                             <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>جرين بلازا بجوار
+                                            <p><i class="fa fa-map-marker-alt text-primary-blue me-2"></i>جرين بلازا
+                                                بجوار
                                                 مطعم
                                                 ابوراوية,EGYPT</p>
                                         </div>
                                         <div class="d-flex border-top">
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                                    class="fa fa-ruler-combined text-primary-blue me-2"></i>1000
+                                                Sqft</small>
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                                    class="fa fa-bed text-primary-blue me-2"></i>3 Bed</small>
                                             <small class="flex-fill text-center py-2"><i
-                                                    class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                    class="fa fa-bath text-primary-blue me-2"></i>2 Bath</small>
                                         </div>
                                     </div>
                                 </div>
@@ -669,26 +703,28 @@
                                         <div class="position-relative overflow-hidden">
                                             <a href=""><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
                                             <div
-                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 bg-primary-blue text-primary-blue-white">
                                                 For Sell</div>
                                             <div
-                                                class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                                class="bg-white rounded-top text-primary-blue position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                                 Office</div>
                                         </div>
                                         <div class="p-4 pb-0">
-                                            <h5 class="text-primary mb-3">EG12,345</h5>
+                                            <h5 class="text-primary-blue mb-3">EG12,345</h5>
                                             <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>جرين بلازا بجوار
+                                            <p><i class="fa fa-map-marker-alt text-primary-blue me-2"></i>جرين بلازا
+                                                بجوار
                                                 مطعم
                                                 ابوراوية,EGYPT</p>
                                         </div>
                                         <div class="d-flex border-top">
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                                    class="fa fa-ruler-combined text-primary-blue me-2"></i>1000
+                                                Sqft</small>
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                                    class="fa fa-bed text-primary-blue me-2"></i>3 Bed</small>
                                             <small class="flex-fill text-center py-2"><i
-                                                    class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                    class="fa fa-bath text-primary-blue me-2"></i>2 Bath</small>
                                         </div>
                                     </div>
                                 </div>
@@ -697,26 +733,28 @@
                                         <div class="position-relative overflow-hidden">
                                             <a href=""><img class="img-fluid" src="img/property-4.jpg" alt=""></a>
                                             <div
-                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 bg-primary-blue text-primary-blue-white">
                                                 For Rent</div>
                                             <div
-                                                class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                                class="bg-white rounded-top text-primary-blue position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                                 Building</div>
                                         </div>
                                         <div class="p-4 pb-0">
-                                            <h5 class="text-primary mb-3">EG12,345</h5>
+                                            <h5 class="text-primary-blue mb-3">EG12,345</h5>
                                             <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>جرين بلازا بجوار
+                                            <p><i class="fa fa-map-marker-alt text-primary-blue me-2"></i>جرين بلازا
+                                                بجوار
                                                 مطعم
                                                 ابوراوية,EGYPT</p>
                                         </div>
                                         <div class="d-flex border-top">
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                                    class="fa fa-ruler-combined text-primary-blue me-2"></i>1000
+                                                Sqft</small>
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                                    class="fa fa-bed text-primary-blue me-2"></i>3 Bed</small>
                                             <small class="flex-fill text-center py-2"><i
-                                                    class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                    class="fa fa-bath text-primary-blue me-2"></i>2 Bath</small>
                                         </div>
                                     </div>
                                 </div>
@@ -725,26 +763,28 @@
                                         <div class="position-relative overflow-hidden">
                                             <a href=""><img class="img-fluid" src="img/property-5.jpg" alt=""></a>
                                             <div
-                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 bg-primary-blue text-primary-blue-white">
                                                 For Sell</div>
                                             <div
-                                                class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                                class="bg-white rounded-top text-primary-blue position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                                 Home</div>
                                         </div>
                                         <div class="p-4 pb-0">
-                                            <h5 class="text-primary mb-3">EG12,345</h5>
+                                            <h5 class="text-primary-blue mb-3">EG12,345</h5>
                                             <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>جرين بلازا بجوار
+                                            <p><i class="fa fa-map-marker-alt text-primary-blue me-2"></i>جرين بلازا
+                                                بجوار
                                                 مطعم
                                                 ابوراوية,EGYPT</p>
                                         </div>
                                         <div class="d-flex border-top">
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                                    class="fa fa-ruler-combined text-primary-blue me-2"></i>1000
+                                                Sqft</small>
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                                    class="fa fa-bed text-primary-blue me-2"></i>3 Bed</small>
                                             <small class="flex-fill text-center py-2"><i
-                                                    class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                    class="fa fa-bath text-primary-blue me-2"></i>2 Bath</small>
                                         </div>
                                     </div>
                                 </div>
@@ -753,31 +793,33 @@
                                         <div class="position-relative overflow-hidden">
                                             <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a>
                                             <div
-                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                                class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 bg-primary-blue text-primary-blue-white">
                                                 For Rent</div>
                                             <div
-                                                class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                                class="bg-white rounded-top text-primary-blue position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                                 Shop</div>
                                         </div>
                                         <div class="p-4 pb-0">
-                                            <h5 class="text-primary mb-3">EG12,345</h5>
+                                            <h5 class="text-primary-blue mb-3">EG12,345</h5>
                                             <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>جرين بلازا بجوار
+                                            <p><i class="fa fa-map-marker-alt text-primary-blue me-2"></i>جرين بلازا
+                                                بجوار
                                                 مطعم
                                                 ابوراوية,EGYPT</p>
                                         </div>
                                         <div class="d-flex border-top">
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                                    class="fa fa-ruler-combined text-primary-blue me-2"></i>1000
+                                                Sqft</small>
                                             <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                                    class="fa fa-bed text-primary-blue me-2"></i>3 Bed</small>
                                             <small class="flex-fill text-center py-2"><i
-                                                    class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                    class="fa fa-bath text-primary-blue me-2"></i>2 Bath</small>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <a class="btn btn-primary py-3 px-5" href="">Browse More Property</a>
+                                    <a class="btn button-primary  py-3 px-5" href="">Browse More Property</a>
                                 </div>
                             </div>
                         </div>
@@ -794,7 +836,7 @@
                         <div class="bg-white rounded p-4" style="border: 1px dashed rgba(0, 185, 142, .3)">
                             <div class="row g-5 align-items-center">
                                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                                    <img class="img-fluid rounded w-100" src="img/call-to-action.jpg" alt="">
+                                    <img class="img-fluid rounded w-100" src="img/home/contact.jpg" alt="">
                                 </div>
                                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                                     <div class="mb-4">
@@ -803,9 +845,12 @@
                                             sit
                                             diam justo sed vero dolor duo.</p>
                                     </div>
-                                    <a href="" class="btn btn-primary py-3 px-4 me-2"><i
+                                    <a href="tel:+11111224481" class="btn button-primary  py-3 px-4 me-2"><i
                                             class="fa fa-phone-alt me-2"></i>Make A Call</a>
-                                    <a href="" class="btn btn-dark py-3 px-4"><i class="fa fa-calendar-alt me-2"></i>Get
+
+                                    <a href="https://wa.me/1234567890"
+                                        class="btn whatsapp text-primary-white py-3 px-4"><i
+                                            class="bi bi-whatsapp me-2"></i>Get
                                         Appoinment</a>
                                 </div>
                             </div>
@@ -826,24 +871,32 @@
                             eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
                     </div>
                     <div class="row g-4">
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="team-item rounded overflow-hidden">
-                                <div class="position-relative">
-                                    <img class="img-fluid" src="img/team-1.jpg" alt="">
-                                    <div
-                                        class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                        <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        <div class="container">
+                            <div class="swiper team-swiper" style="direction: ltr !important;">
+                                <div class="swiper-wrapper col-12">
+                                    <div class="swiper-slide col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+
+                                        <div class="team-item rounded overflow-hidden">
+                                            <div class="position-relative">
+                                                <img class="img-fluid" src="img/team-1.jpg" alt="">
+                                                <div
+                                                    class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                                    <a class="btn btn-square mx-1" href=""><i
+                                                            class="fab fa-facebook-f"></i></a>
+                                                    <a class="btn btn-square mx-1" href=""><i
+                                                            class="fab fa-twitter"></i></a>
+                                                    <a class="btn btn-square mx-1" href=""><i
+                                                            class="fab fa-instagram"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="text-center p-4 mt-3">
+                                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                                <small>Designation</small>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                </div>
-                                <div class="text-center p-4 mt-3">
-                                    <h5 class="fw-bold mb-0">Full Name</h5>
-                                    <small>Designation</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                      <div class="swiper-slide col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="team-item rounded overflow-hidden">
                                 <div class="position-relative">
                                     <img class="img-fluid" src="img/team-2.jpg" alt="">
@@ -860,7 +913,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+
+
+  <div class="swiper-slide col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="team-item rounded overflow-hidden">
                                 <div class="position-relative">
                                     <img class="img-fluid" src="img/team-3.jpg" alt="">
@@ -877,7 +932,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+
+ <div class="swiper-slide col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                             <div class="team-item rounded overflow-hidden">
                                 <div class="position-relative">
                                     <img class="img-fluid" src="img/team-4.jpg" alt="">
@@ -894,6 +950,13 @@
                                 </div>
                             </div>
                         </div>
+                                </div>
+                            </div>
+                        </div>
+
+                      
+                      
+                       
                     </div>
                 </div>
             </div>
@@ -1019,7 +1082,7 @@
                                 <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
                                     placeholder="Your email">
                                 <button type="button"
-                                    class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                                    class="btn button-primary  py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                             </div>
                         </div>
                     </div>
@@ -1049,7 +1112,7 @@
 
 
             <!-- Back to Top -->
-            <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+            <a href="#" class="btn btn-lg button-primary  btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
         </div>
 
         <!-- JavaScript Libraries -->
@@ -1067,7 +1130,50 @@
 
         <script src="js/fetch/index.js"></script>
         <script src="js/fetch/home.js"></script>
-      
+        <script type="module">
+             new Swiper('.home-type-slider', {
+                slidesPerView: 1,
+              
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 4,
+                        
+                    },
+                    767: {
+                        slidesPerView: 3,
+                     
+                    },
+                    320: {
+                        slidesPerView: 2,
+                     
+                    },
+    
+                }
+            })
+           new Swiper('.team-swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                },
+                slidesPerView: 1,
+                spaceBetween: 10,
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 10
+                    },
+                    767: {
+                        slidesPerView: 2,
+                        spaceBetween: 10
+                    },
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10
+                    },
+    
+                }
+            })
+        </script>
 </body>
 
 </html>

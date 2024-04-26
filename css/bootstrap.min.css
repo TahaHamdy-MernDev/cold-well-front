@@ -2850,7 +2850,7 @@ fieldset:disabled .btn {
     opacity: .65
 }
 
-.btn-primary {
+.button-primary  {
     color: #000;
     background-color: #00B98E;
     border-color: #00B98E

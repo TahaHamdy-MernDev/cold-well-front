@@ -167,7 +167,7 @@ $(document).ready(async function () {
               </div>
             </div>
             <div class="details__icons d-flex gap-2 ">
-              <a href="tel:${property.contact.number}" class="btn btn-primary py-2 px-3 phone-icon d-flex gap-2 justify-content-center align-items-center">
+              <a href="tel:${property.contact.number}" class="btn button-primary  py-2 px-3 phone-icon d-flex gap-2 justify-content-center align-items-center">
               <svg width="20" height="24" viewBox="0 0 20 24" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -176,7 +176,7 @@ $(document).ready(async function () {
           </svg>
           <span localization-key='callUs'>Call Us</span>
               </a>
-              <a href="${property.contact.whatsappLink}" class="btn btn-primary py-2 px-3 d-flex gap-2 justify-content-center align-items-center whatsapp-icon">
+              <a href="${property.contact.whatsappLink}" class="btn button-primary  py-2 px-3 d-flex gap-2 justify-content-center align-items-center whatsapp-icon">
               <svg width="23" height="23" viewBox="0 0 29 29" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path

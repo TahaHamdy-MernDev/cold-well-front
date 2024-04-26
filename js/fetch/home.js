@@ -11,7 +11,9 @@ $(document).ready(async function () {
     }
 
     const container = document.getElementById("home-types");
-    container.innerHTML = "";
+    const propertyTypes = document.getElementById("property-types");
+    container?.innerHTML = "";
+    propertyTypes?.innerHTML = "";
     let jsonData = [
       {
         _id: {
@@ -115,9 +117,10 @@ $(document).ready(async function () {
       },
     ];
     const savedLocale = localStorage.getItem("locale");
-    jsonData.map((item) => {
+  jsonData.map((item,index) => {
+      const delay = (index + 1) * 0.2;
       const element = `
-                    <div class="swiper-slide col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="swiper-slide col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="${delay}s">
                              
                             <a class="cat-item d-block bg-light text-center rounded p-3" href="">
                                 <div class="rounded p-4">
@@ -133,6 +136,7 @@ $(document).ready(async function () {
                       
                     `;
       container.innerHTML += element;
+      propertyTypes.innerHTML += element;
     });
   }
   fetchHomeTypeData();
