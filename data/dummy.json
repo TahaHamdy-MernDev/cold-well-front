@@ -1,0 +1,420 @@
+[
+  {
+    "id": 1,
+    "image": "img/property-1.jpg",
+    "title": "Modern Villa - New Cairo",
+    "location": "New Cairo, Egypt",
+    "type": "villa",
+    "unitCount": [
+      {
+        "label": "Apartment",
+        "count": 10
+      },
+      {
+        "label": "Villa",
+        "count": 15
+      },
+      {
+        "label": "Twinhouse",
+        "count": 5
+      },
+      {
+        "label": "More",
+        "count": 3
+      }
+    ],
+    "detailsImages": [
+      {
+        "image": "img/property/1.jpg"
+      },
+      {
+        "image": "img/property/2.jpg"
+      },
+      {
+        "image": "img/property/3.jpg"
+      },
+      {
+        "image": "img/property/4.jpg"
+      },
+      {
+        "image": "img/property/5.jpg"
+      },
+      {
+        "image": "img/property/6.jpg"
+      }
+    ],
+    "propertyDetails": {
+      "type": "Chalet",
+      "size": "102",
+      "referenceNo": "11327",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "deliveryYear": 2027,
+      "deliveryDate": "2027-06-30",
+      "compound": "Il Monte Galala",
+      "saleType": "Developer Sale",
+      "finishing": "Finished",
+      "developer": "Tatweer Misr",
+      "developerLogo": "img/medium.webp",
+      "uniqueSellingPoints": {
+        "mountainTopLagoon": "Il Monte Galala features the world’s very first mountain-top lagoon, rolling on 200,000 sqms to meet a marvelous 11 kms shoreline.",
+        "adventurePark": "The luxurious destination includes a mountain-top adventure park that offers a wide number of leisure activities, including one of the largest outdoor climbing walls, open climbing areas, calm areas for bonfires and meditation, campsites, rope climbing, hiking trails, and mountain biking.",
+        "desertParkAndNatureWalk": "Il Monte Galala’s Desert Park and Nature Walk is a replica of the Egyptian deserts, offering an exclusive opportunity to spend days in the wilderness with educational signs and interactive activities, perfect for animal lovers.",
+        "mountainTopPromenade": "A one km promenade nestled on top of a mountain, 170 meters above sea level, offering a great place to relax and unwind or enjoy a gourmet meal with a picturesque view in one of the various high-end restaurants."
+      }
+    },
+    "price": {
+      "minPrice": 15600000,
+      "maxPrice": 16800000,
+      "monthly": 95000,
+      "term": 10,
+      "total": 20500000,
+      "currency": "EGP"
+    },
+    "contact": {
+      "number": "+12345678",
+      "whatsappLink": "https://wa.me/1234567890"
+    }
+  },
+  {
+    "id": 2,
+    "image": "img/property-2.jpg",
+    "title": "Luxury Flat - Zamalek",
+    "location": "Zamalek, Cairo, Egypt",
+    "type": "apartment",
+    "unitCount": [
+      {
+        "label": "Apartment",
+        "count": 20
+      },
+      {
+        "label": "Villa",
+        "count": 5
+      },
+      {
+        "label": "Studio",
+        "count": 10
+      },
+      {
+        "label": "More",
+        "count": 1
+      }
+    ],
+    "price": {
+      "monthly": 120000,
+      "term": 7,
+      "total": 15000000,
+      "currency": "EGP"
+    }
+  },
+  {
+    "id": 3,
+    "image": "img/property-3.jpg",
+    "title": "Beach House - North Coast",
+    "location": "North Coast, Egypt",
+    "type": "chalet",
+    "unitCount": [
+      {
+        "label": "Apartment",
+        "count": 8
+      },
+      {
+        "label": "Villa",
+        "count": 12
+      },
+      {
+        "label": "Chalet",
+        "count": 20
+      },
+      {
+        "label": "More",
+        "count": 4
+      }
+    ],
+    "price": {
+      "monthly": 80000,
+      "term": 5,
+      "total": 9600000,
+      "currency": "EGP"
+    }
+  },
+  {
+    "id": 4,
+    "image": "img/property-4.jpg",
+    "title": "Cozy Apartment - Maadi",
+    "location": "Maadi, Cairo, Egypt",
+    "type": "apartment",
+    "unitCount": [
+      {
+        "label": "Apartment",
+        "count": 25
+      },
+      {
+        "label": "Villa",
+        "count": 3
+      },
+      {
+        "label": "Studio",
+        "count": 12
+      },
+      {
+        "label": "More",
+        "count": 5
+      }
+    ],
+    "price": {
+      "monthly": 65000,
+      "term": 8,
+      "total": 7800000,
+      "currency": "EGP"
+    }
+  },
+  {
+    "id": 5,
+    "image": "img/property-5.jpg",
+    "title": "Suburban Villa - Sheikh Zayed",
+    "location": "Sheikh Zayed City, Egypt",
+    "type": "villa",
+    "unitCount": [
+      {
+        "label": "Apartment",
+        "count": 5
+      },
+      {
+        "label": "Villa",
+        "count": 18
+      },
+      {
+        "label": "Twinhouse",
+        "count": 10
+      },
+      {
+        "label": "More",
+        "count": 2
+      }
+    ],
+    "price": {
+      "monthly": 110000,
+      "term": 10,
+      "total": 19800000,
+      "currency": "EGP"
+    }
+  },
+  {
+    "id": 6,
+    "image": "img/property-6.jpg",
+    "title": "Downtown Flat - Alexandria",
+    "location": "Alexandria, Egypt",
+    "type": "apartment",
+    "unitCount": [
+      {
+        "label": "Apartment",
+        "count": 30
+      },
+      {
+        "label": "Studio",
+        "count": 15
+      },
+      {
+        "label": "Penthouse",
+        "count": 5
+      },
+      {
+        "label": "More",
+        "count": 3
+      }
+    ],
+    "price": {
+      "monthly": 70000,
+      "term": 6,
+      "total": 10050000,
+      "currency": "EGP"
+    }
+  },
+  {
+    "id": 7,
+    "image": "img/property-1.jpg",
+    "title": "Modern Villa - New Cairo",
+    "location": "New Cairo, Egypt",
+    "type": "villa",
+    "unitCount": [
+      {
+        "label": "Apartment",
+        "count": 10
+      },
+      {
+        "label": "Villa",
+        "count": 15
+      },
+      {
+        "label": "Twinhouse",
+        "count": 5
+      },
+      {
+        "label": "More",
+        "count": 3
+      }
+    ],
+    "price": {
+      "monthly": 95000,
+      "term": 10,
+      "total": 20500000,
+      "currency": "EGP"
+    }
+  },
+  {
+    "id": 8,
+    "image": "img/property-2.jpg",
+    "title": "Luxury Flat - Zamalek",
+    "location": "Zamalek, Cairo, Egypt",
+    "type": "apartment",
+    "unitCount": [
+      {
+        "label": "Apartment",
+        "count": 20
+      },
+      {
+        "label": "Villa",
+        "count": 5
+      },
+      {
+        "label": "Studio",
+        "count": 10
+      },
+      {
+        "label": "More",
+        "count": 1
+      }
+    ],
+    "price": {
+      "monthly": 120000,
+      "term": 7,
+      "total": 15000000,
+      "currency": "EGP"
+    }
+  },
+  {
+    "id": 9,
+    "image": "img/property-3.jpg",
+    "title": "Beach House - North Coast",
+    "location": "North Coast, Egypt",
+    "type": "chalet",
+    "unitCount": [
+      {
+        "label": "Apartment",
+        "count": 8
+      },
+      {
+        "label": "Villa",
+        "count": 12
+      },
+      {
+        "label": "Chalet",
+        "count": 20
+      },
+      {
+        "label": "More",
+        "count": 4
+      }
+    ],
+    "price": {
+      "monthly": 80000,
+      "term": 5,
+      "total": 9600000,
+      "currency": "EGP"
+    }
+  },
+  {
+    "id": 10,
+    "image": "img/property-4.jpg",
+    "title": "Cozy Apartment - Maadi",
+    "location": "Maadi, Cairo, Egypt",
+    "type": "apartment",
+    "unitCount": [
+      {
+        "label": "Apartment",
+        "count": 25
+      },
+      {
+        "label": "Villa",
+        "count": 3
+      },
+      {
+        "label": "Studio",
+        "count": 12
+      },
+      {
+        "label": "More",
+        "count": 5
+      }
+    ],
+    "price": {
+      "monthly": 65000,
+      "term": 8,
+      "total": 7800000,
+      "currency": "EGP"
+    }
+  },
+  {
+    "id": 11,
+    "image": "img/property-5.jpg",
+    "title": "Suburban Villa - Sheikh Zayed",
+    "location": "Sheikh Zayed City, Egypt",
+    "type": "villa",
+    "unitCount": [
+      {
+        "label": "Apartment",
+        "count": 5
+      },
+      {
+        "label": "Villa",
+        "count": 18
+      },
+      {
+        "label": "Twinhouse",
+        "count": 10
+      },
+      {
+        "label": "More",
+        "count": 2
+      }
+    ],
+    "price": {
+      "monthly": 110000,
+      "term": 10,
+      "total": 19800000,
+      "currency": "EGP"
+    }
+  },
+  {
+    "id": 12,
+    "image": "img/property-6.jpg",
+    "title": "Downtown Flat - Alexandria",
+    "location": "Alexandria, Egypt",
+    "type": "apartment",
+    "unitCount": [
+      {
+        "label": "Apartment",
+        "count": 30
+      },
+      {
+        "label": "Studio",
+        "count": 15
+      },
+      {
+        "label": "Penthouse",
+        "count": 5
+      },
+      {
+        "label": "More",
+        "count": 3
+      }
+    ],
+    "price": {
+      "monthly": 70000,
+      "term": 6,
+      "total": 10050000,
+      "currency": "EGP"
+    }
+  }
+]

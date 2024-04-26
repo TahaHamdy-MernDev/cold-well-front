@@ -1,0 +1,38 @@
+{
+    "exploreProperties": "Explore Properties",
+    "title": "Welcome to this localization demo site",
+    "chalet": "Chalet",
+    "duplex": "Duplex",
+    "studio": "Studio",
+    "townHouse": "Town House",
+    "twin": "Twin",
+    "villa": "Villa",
+    "description": "Software localization is the process of adapting software to the culture and language of an end user, from standards of measurement to video and graphic design. It involves not only translation but also design and UX changes to make software look and feel natural to the target user."
+    ,"paymentPlansTitle": "Payment Plans",
+    "monthly": "Monthly",
+    "downPayment": "Down Payment",
+    "years": "Years",
+    
+        "referenceNo": "Reference No",
+        "bedrooms": "Bedrooms",
+        "bathrooms": "Bathrooms",
+        "deliveryYear": "Delivery Year",
+        "compound": "Compound",
+        "saleType": "Sale Type",
+        "finishing": "Finishing",
+  
+
+        "pricesStartFrom": "Prices Start From",
+        "maxPrice": "Max Price :",
+        "callUs": "Call Us",
+        "whatsapp": "Whatsapp",
+
+        "newLunch": "Explore New Lunch",
+        "showMore":"showMore",
+        "lunch": "lunch",
+        "home": "Home",
+        "pages": "Pages",
+        "homePage":{
+            "mainTitle": "Find A Perfect Home To Live With Your Family"
+          }
+}

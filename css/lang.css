@@ -1,0 +1,37 @@
+[dir="rtl"] .navbar-nav {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+#active-type__result-number {
+  left: 100%;
+}
+
+[dir="rtl"] #active-type__result-number {
+  right: 100% !important;
+}
+
+/* [dir="rtl"] .fa-map-marker-alt{
+    margin-left: .5rem !important;
+    margin-right: 0 !important;
+
+} */
+
+[dir="rtl"] .table-th {
+  text-align: right !important;
+}
+[dir="rtl"] .breadcrumb-item + .breadcrumb-item::before {
+  float: right !important;
+  padding-right: 0 !important;
+  padding-left: 0.5rem !important;
+}
+[dir="rtl"] .owl-nav {
+
+  left: 96% !important;
+}
+
+/** 
+[dir="rtl"]
+[dir="rtl"]
+[dir="rtl"]
+ */
