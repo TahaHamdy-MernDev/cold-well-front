@@ -30,14 +30,15 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/colors.css">
 </head>
 
 <body>
-    <div class="container-xxl bg-white p-0">
+    <div class="container-xxl bg-white p-0 geometos-font">
         <!-- Spinner Start -->
         <div id="spinner"
             class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+            <div class="spinner-border text-primary-blue" style="width: 3rem; height: 3rem" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
@@ -46,50 +47,57 @@
         <!-- Navbar Start -->
         <div class="container-fluid container nav-bar bg-transparent  ">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4 rounded-2">
-              <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
-                <img class="img-fluid" src="img/Screenshot 2023-12-17 000313-PhotoRoom.png-PhotoRoom.png" />
-              </a>
-              <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto">
-                  <a href="index.html" class="nav-item nav-link active" localization-key="home">Home</a>
-                  <a href="about.html" class="nav-item nav-link" localization-key="about">About</a>
-                  <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                      localization-key='property'>Property</a>
-                    <div class="dropdown-menu rounded-0 m-0">
-                      <a href="property-list.html" class="dropdown-item" localization-key='propertyList'>Property List</a>
-                      <a href="property-type.html" class="dropdown-item" localization-key='propertyType'>Property Type</a>
-                      <a href="property-agent.html" localization-key='propertyAgent' class="dropdown-item">Property Agent</a>
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                    <img class="img-fluid" src="img/Screenshot 2023-12-17 000313-PhotoRoom.png-PhotoRoom.png" />
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active" localization-key="home">Home</a>
+                        <a href="about.html" class="nav-item nav-link" localization-key="about">About</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                localization-key='property'>Property</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="property-list.html" class="dropdown-item"
+                                    localization-key='propertyList'>Property List</a>
+                                <a href="property-type.html" class="dropdown-item"
+                                    localization-key='propertyType'>Property Type</a>
+                                <a href="property-agent.html" localization-key='propertyAgent'
+                                    class="dropdown-item">Property Agent</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                localization-key='pages'>Pages</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="property.html" class="dropdown-item"
+                                    localization-key='property Page'>Property</a>
+                                <a href="testimonial.html" class="dropdown-item"
+                                    localization-key='testimonial'>Testimonial</a>
+                                <a href="lunch.html" class="dropdown-item" localization-key='lunch'>Lunch</a>
+                                <a href="404.html" class="dropdown-item" localization-key='error 404'>404 Error</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link d-flex flex-nowrap" style="word-wrap:inherit;"
+                            localization-key='contact'>Contact</a>
                     </div>
-                  </div>
-                  <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" localization-key='pages'>Pages</a>
-                    <div class="dropdown-menu rounded-0 m-0">
-                      <a href="property.html" class="dropdown-item" localization-key='property Page'>Property</a>
-                      <a href="testimonial.html" class="dropdown-item" localization-key='testimonial'>Testimonial</a>
-                      <a href="lunch.html" class="dropdown-item" localization-key='lunch'>Lunch</a>
-                      <a href="404.html" class="dropdown-item" localization-key='error 404'>404 Error</a>
+                    <div class="d-flex justify-content-center align-items-center  gap-1">
+                        <a href="create-property.html"
+                            class="btn button-primary  bg-primary__color border-0 px-2 d-none d-lg-flex"
+                            localization-key='Add Property'>
+                        </a>
+                        <div class="navbar-right">
+                            <button id="lang-switcher" class="btn lang-switcher">
+                                <span id="active-lang">Ar</span> <i class="fas fa-globe"></i>
+                            </button>
+                        </div>
                     </div>
-                  </div>
-                  <a href="contact.html" class="nav-item nav-link d-flex flex-nowrap" style="word-wrap:inherit;"
-                    localization-key='contact'>Contact</a>
                 </div>
-                <div class="d-flex justify-content-center align-items-center  gap-1">
-                  <a href="create-property.html" class="btn button-primary  bg-primary__color border-0 px-2 d-none d-lg-flex"
-                    localization-key='Add Property'>
-                  </a>
-                  <div class="navbar-right">
-                    <button id="lang-switcher" class="btn lang-switcher">
-                      <span id="active-lang">Ar</span> <i class="fas fa-globe"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
             </nav>
-          </div>
+        </div>
         <!-- Navbar End -->
 
         <!-- Header Start -->
@@ -115,7 +123,7 @@
         <!-- Header End -->
 
         <!-- Search Start -->
-        <div class="container-fluid search-container bg-primary__color mb-5 wow fadeIn" data-wow-delay="0.1s"
+        <div class="container-fluid search-container bg-primary-blue mb-5 wow fadeIn" data-wow-delay="0.1s"
             style="padding: 35px;">
             <div class="container">
                 <div class="row g-2">
@@ -126,33 +134,40 @@
                                     id="searchKeyword">
                             </div>
                             <div class="col-md-4 custom-dropdown">
-                                <div class="dropdown-toggle border-0 py-3 form-select" type="button">Select Options
+                                <div class="dropdown-toggle border-0 py-3 form-select" type="button">Property Type
                                 </div>
                                 <ul class="dropdown-menu form-select">
-                                    <li class="d-flex gap-1 align-items-center"><input type="checkbox" id="option1" name="option1"><label for="option1">Option
+                                    <li class="d-flex gap-1 align-items-center"><input type="checkbox" id="option1"
+                                            name="option1"><label for="option1">Option
                                             1</label></li>
-                                    <li class="d-flex gap-1 align-items-center"><input type="checkbox" id="option2" name="option2"><label for="option2">Option
+                                    <li class="d-flex gap-1 align-items-center"><input type="checkbox" id="option2"
+                                            name="option2"><label for="option2">Option
                                             2</label></li>
-                                    <li class="d-flex gap-1 align-items-center"><input type="checkbox" id="option3" name="option3"><label for="option3">Option
+                                    <li class="d-flex gap-1 align-items-center"><input type="checkbox" id="option3"
+                                            name="option3"><label for="option3">Option
                                             3</label></li>
                                 </ul>
                             </div>
                             <div class="col-md-4 custom-dropdown">
-                                <div class="dropdown-toggle border-0 py-3 form-select" type="button">Select More Options
+                                <div class="dropdown-toggle border-0 py-3 form-select" type="button">BedRooms
                                 </div>
-                                <ul class="dropdown-menu form-select">
-                                    <li class="d-flex gap-1 align-items-center"><input type="checkbox" id="option4" name="option4"><label for="option4">Option
+                                <ul class="dropdown-menu form-select placeholder-secondary-gray">
+                                    <li class="d-flex gap-1 align-items-center"><input type="checkbox" id="option4"
+                                            name="option4"><label for="option4">Option
                                             4</label></li>
-                                    <li class="d-flex gap-1 align-items-center"><input type="checkbox" id="option5" name="option5"><label for="option5">Option
+                                    <li class="d-flex gap-1 align-items-center"><input type="checkbox" id="option5"
+                                            name="option5"><label for="option5">Option
                                             5</label></li>
-                                    <li class="d-flex gap-1 align-items-center"><input type="checkbox" id="option6" name="option6"><label for="option6">Option
+                                    <li class="d-flex gap-1 align-items-center"><input type="checkbox" id="option6"
+                                            name="option6"><label for="option6">Option
                                             6</label></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-dark   border-0 w-100 py-3" id="searchButton">Search</button>
+                        <button class="btn btn-dark bg-secondary-blue border-0 w-100 py-3"
+                            id="searchButton">Search</button>
                     </div>
                 </div>
             </div>
@@ -178,9 +193,9 @@
                                     <div class="d-flex align-items-center bg-white rounded p-3"
                                         style="border: 1px dashed rgba(0, 185, 142, 0.3)">
                                         <div class="icon me-3" style="width: 45px; height: 45px">
-                                            <i class="fa fa-map-marker-alt text-primary"></i>
+                                            <i class="fa fa-map-marker-alt text-primary-blue"></i>
                                         </div>
-                                        <span>جرين بلازا بجوار مطعم ابوراوية,EGYPT</span>
+                                        <span class="text-secondary-gray">جرين بلازا بجوار مطعم ابوراوية,EGYPT</span>
                                     </div>
                                 </div>
                             </div>
@@ -189,9 +204,9 @@
                                     <div class="d-flex align-items-center bg-white rounded p-3"
                                         style="border: 1px dashed rgba(0, 185, 142, 0.3)">
                                         <div class="icon me-3" style="width: 45px; height: 45px">
-                                            <i class="fa fa-envelope-open text-primary"></i>
+                                            <i class="fa fa-envelope-open text-primary-blue"></i>
                                         </div>
-                                        <span>info@example.com</span>
+                                        <span class="text-secondary-gray">info@example.com</span>
                                     </div>
                                 </div>
                             </div>
@@ -200,9 +215,9 @@
                                     <div class="d-flex align-items-center bg-white rounded p-3"
                                         style="border: 1px dashed rgba(0, 185, 142, 0.3)">
                                         <div class="icon me-3" style="width: 45px; height: 45px">
-                                            <i class="fa fa-phone-alt text-primary"></i>
+                                            <i class="fa fa-phone-alt text-primary-blue"></i>
                                         </div>
-                                        <span>+012 345 6789</span>
+                                        <span class="text-secondary-gray">+012 345 6789</span>
                                     </div>
                                 </div>
                             </div>
@@ -266,11 +281,11 @@
         <!-- Contact End -->
 
         <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
+        <div class="container-fluid border-top text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container ">
                 <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Get In Touch</h5>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-4 text-secondary-black">Get In Touch</h5>
                         <p class="mb-2">
                             <i class="fa fa-map-marker-alt me-3"></i>جرين بلازا بجوار مطعم
                             ابوراوية,EGYPT
@@ -288,47 +303,22 @@
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Quick Links</h5>
-                        <a class="btn btn-link text-white-50" href="">About Us</a>
-                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
-                        <a class="btn btn-link text-white-50" href="">Our Services</a>
-                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
-                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-4 text-secondary-black">Quick Links</h5>
+                        <a class="btn btn-link text-secondary-gray" href="">About Us</a>
+                        <a class="btn btn-link text-secondary-gray" href="">Contact Us</a>
+                        <a class="btn btn-link text-secondary-gray" href="">Our Services</a>
+                        <a class="btn btn-link text-secondary-gray" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-secondary-gray" href="">Terms & Condition</a>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Photo Gallery</h5>
-                        <div class="row g-2 pt-2">
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/property-1.jpg" alt="" />
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/property-2.jpg" alt="" />
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/property-3.jpg" alt="" />
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/property-4.jpg" alt="" />
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/property-5.jpg" alt="" />
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/property-6.jpg" alt="" />
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/property-7.jpg" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Newsletter</h5>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-4 text-secondary-black">Newsletter</h5>
                         <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                         <div class="position-relative mx-auto" style="max-width: 400px">
-                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                            <input style="border: 1px solid var(--primary-blue) ; " class=" placeholder-secondary-gray text-primary-black form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
                                 placeholder="Your email" />
-                            <button type="button" class="btn button-primary  py-2 position-absolute top-0 end-0 mt-2 me-2">
+                            <button type="button"
+                                class="btn button-primary  py-2 position-absolute top-0 end-0 mt-2 me-2">
                                 SignUp
                             </button>
                         </div>
@@ -339,12 +329,11 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">coldwellbanker</a>, All
-                            Right Reserved.
+                            &copy; <a class="border-bottom" href="#">coldwellbanker</a>
+                            <span class=" text-secondary-black">
+                                , All Right Reserved.
+                            </span>
 
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By
-                            <a class="border-bottom" href="coldwellbanker-eg.com">AHMED SAID HASSAN</a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">

@@ -26,9 +26,7 @@ $(document).ready(async function () {
       
         <div class="compound-card property-item rounded overflow-hidden wow fadeInUp" data-wow-delay="${delay}s">
           <div class="position-relative overflow-hidden">
-            <a href="details.html?id=${
-              property.id
-            }"><img class="img-fluid" src="${property.image}" alt="${
+            <a href="details.html?id=1"><img class="img-fluid" src="${property.image}" alt="${
         property.title
       }"></a>
             <div class="row gap-2 text-white position-absolute end-0 top-0 m-2 py-1 px-1">
@@ -73,7 +71,7 @@ $(document).ready(async function () {
             <div class="d-flex justify-content-between align-items-center">
               <div>
                 <h5 class="primary__color mb-1 text-capitalize">
-               <a class="primary__color" href="details.html?id=${property.id}">
+               <a class="primary__color" href="details.html?id=1">
                 ${property.title}
               
                </h5> </a>  

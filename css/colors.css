@@ -1,6 +1,6 @@
 :root {
     --primary-blue: #01216a;
-    --primary-black: #0000;
+    --primary-black: #000000;
     --primary-white: #ffff;
     --secondary-blue: #418fde;
     --secondary-black: #2d2926;
@@ -210,5 +210,12 @@ input::placeholder{
     font-size: 12px !important;
 }
 .category__type p {
+    font-size: 14px !important;
+    color: var(--secondary-black) !important;
     text-align: center;
+}
+
+.unit-count{
+    color: var(--secondary-gray) !important;
+    font-size: 13px;
 }
